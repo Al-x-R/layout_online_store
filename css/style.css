@@ -310,7 +310,7 @@ body {
     padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
     font-family: 'SFProDisplay-Regular', sans-serif;
     font-weight: 700;
     border-radius: 2px;
@@ -321,7 +321,7 @@ body {
     display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tabs-content--active {
     display: block;
 }
 
@@ -370,7 +370,7 @@ body {
     justify-content: space-between;
     padding: 20px 20px 16px;
     margin-bottom: 30px;
-    border: 1px solid#cdcdcd;
+    border: 1px solid #cdcdcd;
     border-radius: 3px;
     transition: all .3s;
 }
@@ -415,3 +415,115 @@ body {
     line-height: 17px;
     color: #c4c4c4;
 }
+
+.product-item {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    text-align: center;
+    padding: 52px 20px 31px;
+    transition: all .3s;
+}
+
+.product-item:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, .25);
+    color: #1c62cd;
+}
+
+.product-item__wrapper {
+    position: relative;
+    width: 271px;
+}
+
+.product-item__title {
+    font-weight: normal;
+    padding: 14px 0 25px;
+}
+
+.product-item__favorite {
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    top: 19px;
+    right: 19px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    z-index: 5;
+}
+
+.product-item__favorite::before {
+    content: '';
+    background-image: url("../images/favorite.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 22px;
+}
+
+.product-item__favorite--active::before {
+    background-image: url("../images/favorite-active.svg");
+}
+
+.product-item__price {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.product-item__basket {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    background: #1c62cd;
+    border: none;
+    border-radius: 10px 0 0 0;
+    bottom: 0;
+    right: 0;
+    outline: none;
+}
+
+.product-item__basket::before {
+    content: '';
+    background-image: url("../images/basket-w.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    width: 30px;
+    height: 24px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.product-item__hover-text {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    padding: 18px 21px;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.product-item:hover .product-item__hover-text {
+    opacity: 1;
+    color: #2f3035;
+}
+
+.product-item--sale::before {
+    content: 'SALE';
+    padding: 8px 15px 8px;
+    background-color: #1c62cd;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-transform: uppercase;
+    color: white;
+    line-height: 14px;
+    letter-spacing: .07em;
+}
+
