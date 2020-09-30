@@ -21,6 +21,14 @@ $(function () {
     $('.product-item__favorite').on('click', function () {
         $(this).toggleClass('product-item__favorite--active')
     })
+
+    $('.product-slider').slick({
+        slidesToShow: 4,
+        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnPrev">' +
+            '<img src="images/left-black.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnNext">' +
+            '<img src="images/right-black.svg" alt=""></button>'
+    })
 });
 
 // const tabNav = document.querySelectorAll('.search__tabs-item')
