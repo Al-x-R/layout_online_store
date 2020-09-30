@@ -167,7 +167,8 @@ body {
     overflow: hidden;
 }
 
-.banner-section__slider-btn {
+.banner-section__slider-btn,
+.product-slider__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -213,7 +214,7 @@ body {
     cursor: pointer;
 }
 
-.slick-active button {
+.slick-active li button {
     background-color: #f0f0f4;
     outline: none;
 }
@@ -317,11 +318,11 @@ body {
     background-color: #f0f0f4;
 }
 
-.search__content-item {
+.tabs-content {
     display: none;
 }
 
-.search__content-item.tabs-content--active {
+.tabs-content.tabs-content--active {
     display: block;
 }
 
@@ -433,6 +434,7 @@ body {
 .product-item__wrapper {
     position: relative;
     width: 271px;
+    text-align: center;
 }
 
 .product-item__title {
@@ -482,6 +484,7 @@ body {
     bottom: 0;
     right: 0;
     outline: none;
+    z-index: 5;
 }
 
 .product-item__basket::before {
@@ -498,10 +501,10 @@ body {
 }
 
 .product-item__hover-text {
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 30%;
-    right: 30px;
+    /*right: 30px;*/
     padding: 18px 21px;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 3px;
@@ -530,6 +533,7 @@ body {
     color: white;
     line-height: 14px;
     letter-spacing: .07em;
+    text-align: center;
 }
 
 .product-item__notify-text {
@@ -573,4 +577,55 @@ body {
 
 .product-item__wrapper.product-item__not-available .product-item__notify-link span {
     border-bottom: 1px solid #1c62cd;
+}
+
+.product__title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+.products__tabs {
+    padding-bottom: 25px;
+}
+
+.products__tab + .products__tab {
+    margin-left: 50px;
+}
+
+.products__tab {
+    padding-bottom: 10px;
+}
+
+.products__tab.tab--active {
+    border-bottom: #1c62cd 2px solid;
+}
+
+.product-slider__slider-btnPrev {
+    left: -40px;
+}
+
+.product-slider__slider-btnNext {
+    right: -20px;
+}
+
+.slick-slide img {
+    display: inline;
+}
+
+.product__more {
+    text-align: center;
+    padding: 35px 0 80px;
+}
+
+.product__more-link {
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 16px 43px;
+    background-color: #f0f0f4;
 }
