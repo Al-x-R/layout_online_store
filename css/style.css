@@ -46,6 +46,10 @@ body {
     margin-bottom: 80px;
 }
 
+
+/***          header          ***/
+
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -150,6 +154,10 @@ body {
     right: auto;
     left: 0;
 }
+
+
+/***           banner          ***/
+
 
 .banner-section__inner {
     display: flex;
@@ -303,6 +311,10 @@ body {
     object-fit: contain;
 }
 
+
+/***          search tabs          ***/
+
+
 .search__tabs {
     margin-bottom: 25px;
 }
@@ -358,6 +370,10 @@ body {
     padding: 17px 41px;
     margin-left: 3px;
 }
+
+
+/***          categories          ***/
+
 
 .categories__inner {
     display: flex;
@@ -416,6 +432,10 @@ body {
     line-height: 17px;
     color: #c4c4c4;
 }
+
+
+/***          products          ***/
+
 
 .product-item {
     min-height: 400px;
@@ -633,6 +653,97 @@ body {
     background-color: #f0f0f4;
 }
 
-.banner {
 
+/***          footer          ***/
+
+
+.footer {
+    background-color: #f0f0f4;
+}
+
+.footer__top {
+    padding-top: 43px;
+}
+
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-item {
+    width: 200px;
+    overflow: hidden;
+}
+
+.footer__top-newsletter {
+    width: 295px;
+    margin-right: 50px;
+}
+
+.footer__top-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.footer-form {
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form__input {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 20px;
+}
+
+.footer-form__input::placeholder {
+    color: #c4c4c4;
+}
+
+.footer-form__btn {
+    padding: 10px 16px;
+    background-color: #1c62cd;
+    color: white;
+    border: none;
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.footer-list {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer__top-social {
+    width: 250px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+}
+
+.social-list__item + .social-list__item {
+    margin-left: 30px;
+}
+
+.footer__bottom {
+    padding: 46px 0 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__bottom-link {
+    margin: 0 40px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #48494d;
 }
