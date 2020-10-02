@@ -747,3 +747,31 @@ body {
     line-height: 12px;
     color: #48494d;
 }
+
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.breadcrumbs__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    color: #c4c4c4;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.breadcrumbs__list-item::after {
+    content: '';
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-image: url("../images/link-arrow.svg");
+}
+
+.breadcrumbs__list-item:last-child::after {
+    display: none;
+}
